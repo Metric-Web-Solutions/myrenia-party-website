@@ -4,7 +4,7 @@ import Homepage from './pages/Homepage';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/myrenia-party-website">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/about" element={<Homepage />} />
