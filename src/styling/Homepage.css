@@ -1,0 +1,255 @@
+html,
+body {
+  overflow-x: hidden;
+  font-size: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(255 255 255);
+  font-family: Paragraphs;
+}
+
+body > * {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.fold {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../assets/city-skyline.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  filter: drop-shadow(rgb(0 0 0.5) 0 0.2rem 2rem);
+}
+
+.fold-logo-name {
+  display: flex;  
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-family: Headers;
+  color: white;
+  text-wrap: nowrap;
+  padding-top: 1rem;
+}
+
+.fold-logo {
+  width: 50%;
+  filter: drop-shadow(rgb(0, 0, 0) 0 0.2rem 0.1rem);
+}
+
+.fold-header-name {
+  filter: drop-shadow(rgb(0 0 0.25) 0 0.2rem 0.1rem);
+  color: white;
+  margin: 0;
+}
+
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+  gap: 0.5rem;
+  color: white;
+  margin: 0;
+}
+
+.hero-cta {
+  margin: 0;
+}
+
+.hero-content {
+  width: 75%;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.achievements {
+  display: flex;
+  gap: 4rem;
+  background-image: linear-gradient(to left, #3B2E5A, #2b1e4b);
+  width: 100vw;
+}
+
+.achievements-info {
+  display: flex;
+  gap: 2rem;
+  padding: 4rem 4rem 4rem 4rem;
+}
+
+.achievements-list > * {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.leader {
+  display: flex;
+  gap: 4rem;
+  background-image: linear-gradient(to left, #3B2E5A, #2b1e4b);
+  width: 100vw;
+}
+
+.leader-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 4rem 4rem 4rem;
+}
+
+.leader-description {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.leader-description > * {
+  margin: 0;
+  padding: 0;
+}
+
+.leader-image {
+  border: 0.4rem solid #000000;
+}
+
+.manifesto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('../assets/fist.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 8rem 0;
+  filter: drop-shadow(rgb(0 0 0.5) 0 0.2rem 2rem);
+}
+
+.manifesto-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  border: 0.4rem solid #3B2E5A;
+  padding: 4rem;
+}
+
+.manifesto-content > * {
+  margin: 0;
+  padding: 0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 2rem;
+  background-color: #242424;
+}
+
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-logo {
+  max-width: 50%;
+}
+
+.footer-logo-name {
+  margin: 0;
+}
+
+.contact-information-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.legal-information-section {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.8rem;
+  padding: 0 0.8rem;
+}
+
+.contact-information-section>*,
+.legal-information-section>* {
+  margin: 0;
+  padding: 0;
+}
+
+/* TYPOGRAPHY */
+
+@font-face {
+  font-family: Headers;
+  src: local('Headers'), url("../fonts/Scada-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: Paragraphs;
+  src: local('Paragraphs'), url("../fonts/LibreBaskerville-Regular.ttf") format('truetype');
+}
+
+p {
+  font-size: 1rem;
+  font-family: Paragraphs;
+}
+
+h6 {
+  font-size: 1.25rem;
+  font-family: Headers;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-family: Headers;
+  display: inline-block;
+}
+
+h4 {
+  font-size: 2rem;
+  font-family: Headers;
+  display: inline-block;
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-family: Headers;
+  display: inline-block;
+}
+
+h2 {
+  font-size: 3rem;
+  font-family: Headers;
+  display: inline-block;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-family: Headers;
+  display: inline-block;
+}
